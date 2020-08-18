@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D parallax tilt</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <img src="img/theme.jpg" alt="" class="img-box">
+        <div class="content-box">
+            <h2>Tilt box hover effect</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="img/theme2.jpg" alt="" class="img-box">
+        <div class="content-box">
+            <h2>Tilt box hover effect</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+    </div>
+</div>
+
+<!-- at the end of the body -->
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+        max: 25,
+        speed: 400
+    });
+</script>
+</body>
+</html>

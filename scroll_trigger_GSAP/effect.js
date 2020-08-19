@@ -7,10 +7,12 @@ gsap
     .timeline({
         scrollTrigger: {
             trigger: 'section',
+            // start: 'center center',
+            // end: 'bottom top',
             start: 'center center',
-            end: 'bottom top',
+            end: '2000px top',
             scrub: true,
-            markers: false,
+            markers: false, // adjust to true to get debug
             pin: true
         }
     })

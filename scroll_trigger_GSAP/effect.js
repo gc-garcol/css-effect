@@ -12,7 +12,7 @@ gsap
             start: 'center center',
             end: '2000px top',
             scrub: true,
-            markers: false, // adjust to true to get debug
+            markers: true, // adjust to true to get debug
             pin: true
         }
     })

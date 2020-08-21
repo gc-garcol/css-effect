@@ -200,6 +200,13 @@ body {
     font-weight: 900;
     font-style: italic;
     color: rgba(255, 255, 255, .2);
+    transition: 0.4s;
+}
+
+.container .card:hover:after {
+    font-size: 10em;
+    font-weight: 600;
+    left: -5%;
 }
 
 .container .card:hover:before {

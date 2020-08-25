@@ -19,7 +19,8 @@ window.addEventListener('scroll', function () {
     road.style.top = toPx(value, 0.15);
     text.style.top = toPx(value, 0.15);
 
-    console.log("scrolling " + value);
+    let rect = text.getBoundingClientRect();
+    console.log("scrolling " + value + " textY " + rect.top);
 });
 
 function toPx(x, y) {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page scroll</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="banner">
+  <header>
+    <a href="#" class="logo">Brand name</a>
+    <div class="toggle"></div>
+  </header>
+  <img src="img/bg.jpg" alt="">
+  <div class="content" data-0-top="opacity: 0; left: 10rem" data-30-top="opacity: 1; left: 0;"> <!--NOTE: relative data-[offset]-(viewport-anchor)-[element-anchor]-->
+    <h2>Success by design</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec sapien at lorem finibus tincidunt in ut ligula. Phasellus ac libero at purus tempor tristique ut eget mi. Vestibulum vitae elit pellentesque, lacinia nisi et, lacinia odio. Integer arcu tellus, sollicitudin a quam at, elementum congue urna. Curabitur vitae massa finibus, porta erat quis, lobortis turpis. Pellentesque vitae lorem varius, varius ligula at, convallis sapien. Quisque elementum eu lorem sit amet venenatis.</p>
+  </div>
+</div>
+
+<div class="about">
+  <div class="context-box">
+    <h2 class="heading" data-center-center="opacity: 1; left: 0" data-0-bottom="opacity: 0; left: 5rem;">About us</h2>
+    <p class="text" data-center-center="opacity: 1; left: 0" data-0-bottom="opacity: 0; left: -5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec sapien at lorem finibus tincidunt in ut ligula. Phasellus ac libero at purus tempor tristique ut eget mi. Vestibulum vitae elit pellentesque, lacinia nisi et, lacinia odio. Integer arcu tellus, sollicitudin a quam at, elementum congue urna. Curabitur vitae massa finibus, porta erat quis, lobortis turpis. Pellentesque vitae lorem varius, varius ligula at, convallis sapien. Quisque elementum eu lorem sit amet venenatis.</p>
+  </div>
+  <div class="img-box" data-center-center="opacity: 1; left: 0" data-0-bottom="opacity: 0; left: 20rem;"></div>
+</div>
+
+<div class="service"></div>
+
+<div class="technology"></div>
+
+<div class="testimonial"></div>
+
+<div class="contact"></div>
+
+<script src="skrollr.js"></script>
+<script src="effect.js"></script>
+</body>
+</html>

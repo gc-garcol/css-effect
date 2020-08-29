@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b2b2b;
+  flex-direction: column;
+}
+
+label {
+  position: relative;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  display: none;
+}
+
+span {
+  position: relative;
+  display: block;
+  width: 8rem;
+  height: 4rem;
+  background: #222;
+  border-radius: 4rem;
+  box-shadow: 0 0.2rem 1.5rem rgba(0,0,0,.2);
+}
+
+i.indicator {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 50%;
+}
+
+label input:checked ~ i.indicator {
+  left: 4rem;
+}
+
+i.indicator:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 .2rem #f00,
+              0 0 .5rem #f00,
+              0 0 1rem #f00,
+              0 0 1.5rem #f00,
+              0 0 2rem #f00;
+}
+
+label input:checked ~ i.indicator:before {
+  background: #0f0;
+  box-shadow:
+  0 0 .2rem #0f0,
+  0 0 .5rem #0f0,
+  0 0 1rem #0f0,
+  0 0 1.5rem #0f0,
+  0 0 2rem #0f0,
+  0 0 3rem #0f0,
+  0 0 4rem #0f0
+
+;
+}

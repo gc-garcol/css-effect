@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mac {
+  grid-area: mac;
+}
+
+.macbook {
+  grid-area: macbook;
+}
+
+.iphone {
+  grid-area: iphone;
+}
+
+body .container {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+  '.  .    .      .        .        .'
+  '.  mac  mac    macbook  macbook  .'
+  '.  mac  mac    macbook  macbook  .'
+  '.  .    iphone iphone   .        .';
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .mac .img-box {
+  position: absolute;
+  width: 92%;
+  height: 65%;
+  left: 24px;
+  top: 22px;
+  /*background: red;*/
+  /*opacity: .2;*/
+  /* background: url('img/desktopWebsite.jpg'); */
+}
+
+.container .macbook .img-box {
+  position: absolute;
+  width: 77%;
+  height: 81%;
+  left: 72px;
+  top: 18px;
+  /*background: red;*/
+  /*opacity: .2;*/
+}
+
+.container .iphone .img-box {
+  position: absolute;
+  width: 67%;
+  height: 75%;
+  left: 41px;
+  top: 43px;
+  /*background: red;*/
+  /*opacity: .2;*/
+  background: url('img/mobileWebsite.jpg');
+  background-position: top;
+  background-size: 100%;
+  transition: 15s;
+}
+
+.container .mac .img-box {
+  background: url('img/desktopWebsite.jpg');
+  background-position: top;
+  background-size: 100%;
+  transition: 15s;
+}
+
+.container .macbook .img-box {
+  background: url('img/desktopWebsite.jpg');
+  background-position: top;
+  background-size: 100%;
+  transition: 15s;
+}
+
+.container div:hover .img-box {
+  background-position: bottom;
+}
+
+@media screen and (max-width: 1270px) {
+  body .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

@@ -49,10 +49,10 @@ body .container {
 
 .container .mac .img-box {
   position: absolute;
-  width: 92%;
+  width: 84%;
   height: 65%;
-  left: 24px;
-  top: 22px;
+  left: 8%;
+  top: 5%;
   /*background: red;*/
   /*opacity: .2;*/
   /* background: url('img/desktopWebsite.jpg'); */
@@ -60,10 +60,10 @@ body .container {
 
 .container .macbook .img-box {
   position: absolute;
-  width: 77%;
-  height: 81%;
-  left: 72px;
-  top: 18px;
+  width: 69%;
+  height: 82%;
+  left: 15.5%;
+  top: 5%;
   /*background: red;*/
   /*opacity: .2;*/
 }
@@ -98,6 +98,21 @@ body .container {
 
 .container div:hover .img-box {
   background-position: bottom;
+}
+
+.container .mac img {
+  width: 90%;
+  height: auto;
+}
+
+.container .macbook img {
+  width: 90%;
+  height: auto;
+}
+
+.container .iphone img {
+  width: 90%;
+  height: auto;
 }
 
 @media screen and (max-width: 1270px) {

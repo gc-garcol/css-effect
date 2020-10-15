@@ -22,16 +22,39 @@
         </div>
     </div>
 
+    <div id="clock">
+        <h2>My time</h2>
+        <div id="time">
+            <div class="hournumber">
+                <span id="hournumber">00</span><span>Hour</span>
+            </div>
+            <div class="minutenumber">
+                <span id="minutenumber">00</span><span>minute</span>
+            </div>
+            <div class="secondnumber">
+                <span id="secondnumber">00</span><span>second</span>
+            </div>
+        </div>
+    </div>
+
     <script>
         let hr = document.getElementsByClassName("hr")[0];
         let mn = document.getElementsByClassName("mn")[0];
         let sc = document.getElementsByClassName("sc")[0];
+
+        let hournumber = document.getElementById("hournumber");
+        let minutenumber = document.getElementById("minutenumber");
+        let secondnumber = document.getElementById("secondnumber");
 
         let update = () => {
             let date = new Date();
             let hh = date.getHours();
             let mm = date.getMinutes();
             let ss = date.getSeconds();
+
+            hournumber.innerHTML = date.getHours();
+            minutenumber.innerHTML = date.getMinutes();
+            secondnumber.innerHTML = date.getSeconds();
 
             hr.style.transform = `rotateZ(${(hh % 24 + mm / 60) * 360 / 12 }deg)`;
             mn.style.transform = `rotateZ(${(mm / 60) * 360}deg)`;
